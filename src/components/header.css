@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,300;1,200;1,300&family=Lato:wght@300&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,300;1,400;1,800&family=Poppins:ital,wght@1,200;1,400&family=Rubik+Burned&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,300;1,200;1,300&family=Lato:wght@300&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,300;1,400;1,800&family=Poppins:ital,wght@1,200;1,400&family=Roboto:ital,wght@0,700;0,900;1,700;1,900&family=Rubik+Burned&family=Shadows+Into+Light&display=swap');
+
+
+:root{
+  --light-green: #a0ebcf;
+  --dark-green:#014871;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    /* background: lightblue; */
+    padding: 5px 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, var(--dark-green)0% , var(--light-green)100%);
+}
+
+.main-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:100%;
+    gap: 30px;
+ 
+}
+.main-head h1{
+    text-align: center;
+}
+
+.head-upper h1{
+    /* letter-spacing: 4px; */
+   text-transform: uppercase;
+    font-weight: 600;
+    font-size: 45px;
+    color: antiquewhite;
+    font-family: 'Shadows Into Light', cursive;
+}
+.head-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.3) 0px 15px 12px;
+    font-size: 20px;
+color: var(--dark-green);
+/* background: linear-gradient(90deg, rgb(42,41,40)0%, rgb(23,23,23)100%); */
+background-color: lightgrey;
+padding: 20px;
+height: 65vh;
+width: 20vw;
+margin-top: 10px;
+}
+.head-down li{
+    cursor: pointer;
+}
+.head-down li:hover{
+    font-weight: bold;
+    list-style:circle;
+    opacity: 0.9;
+}
+
+.open-close{
+    height: 70px;
+    width: 70px;
+    background-image: url('https://media.istockphoto.com/id/157686859/photo/abstract-light-blue-background-textured-effect-xxxl.jpg?s=612x612&w=0&k=20&c=xdtbZVttNASPoPmcxTaiqHTrDlfldc9HHYtECSUtjaw=');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.open-close img{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
