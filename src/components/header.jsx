@@ -22,20 +22,20 @@ return(
  <div className='container main-head '>
 
 <div className='head-upper'>
- {/* <img></img> */}
+ 
  <h1>Company Name</h1>
 </div>
 
 
 { Open=="Close" && <Pop/>}
 
-{/* <ul className='head-down'>
+ {/* <ul className='head-down'>
 <li>Home</li>
 <li>Collateral</li>
 <li>Analytics</li>
 <li>Inventory</li>
 <li>Accounts</li>
-</ul> */}
+</ul>  */}
 
 <div className="open-close"
 onClick={click}

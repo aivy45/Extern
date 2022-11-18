@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Company.css'
 import Functions from './Functions';
-
+import Create from './Create';
 const Company = () => {
 
   const [temp, setTemp] = useState('g');
@@ -19,6 +19,10 @@ function createHandler() {
     return (
 
       <React.Fragment>
+
+
+
+   <Create />
       <div className="header">
         <button className='new-b' onClick={createHandler}>Add new</button>
         <button className="profile">Profile</button>

@@ -4,7 +4,7 @@ const Create = (props) =>{
 
     const nameRef = useRef('');
 
-    const submitHandler = (event) => {
+    const submitHandler = async(event) => {
 
         event.preventDefault();
 
@@ -12,11 +12,20 @@ const Create = (props) =>{
             name: nameRef.current.value
         };
 
-        props.addData(data);
+      const res = await fetch('/register', {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                data
+            })
+      })
     }
 
     return(
-        <form onSubmit={submitHandler}>
+       
+        <form action="/" onSubmit={submitHandler}>
             <label htmlFor="name">Name</label>
            <input type="text" id="name" ref={nameRef} />
            <button>Add New</button>
