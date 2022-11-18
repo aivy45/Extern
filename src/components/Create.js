@@ -1,4 +1,6 @@
 import React, {useRef} from "react";
+import "./Create.css"
+
 
 const Create = (props) =>{
 
@@ -16,11 +18,13 @@ const Create = (props) =>{
     }
 
     return(
-        <form onSubmit={submitHandler}>
+        <div className="form">
+        <form onSubmit={submitHandler} id="create-form">
             <label htmlFor="name">Name</label>
-           <input type="text" id="name" ref={nameRef} />
+           <input type="text" id="name" ref={nameRef} placeholder="Enter company name" />
            <button>Add New</button>
         </form>
+        </div>
     )
 }
 

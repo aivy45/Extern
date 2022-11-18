@@ -1,16 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Company from './Company';
 
 
 const Pop=()=>{
     
+const [show,setShow]= useState(false);  
+const clickHandler=(event)=>{
+    setShow(true);
+}
+
+
     return(
- <ul className='head-down'>
+<div>
+
+{show && <Company/>}
+
+
+{!show && <ul className='head-down'>
 <li>Home</li>
-<li>Collateral</li>
+<li id='collateral' 
+ onClick={clickHandler}
+>Collateral</li>
 <li>Analytics</li>
 <li>Inventory</li>
 <li>Accounts</li>
-</ul> 
+</ul> }
+</div>
 
     )
 }
