@@ -7,7 +7,7 @@ const Functions = (props) => {
 
     return(
         <div>
-        
+      
         {props.show==='g' && <Graphics />}
         {props.show==='a' && <Ad />}
          {props.show==='i' && <Interactions />}   

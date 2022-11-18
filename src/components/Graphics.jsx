@@ -1,12 +1,12 @@
 import React from "react";
-
+import './Graphics.css';
 const ads = [
     {
-        title: 'maggie',
+        title: 'Maggie',
         img: 'https://m.media-amazon.com/images/I/81dpDHc95AL.jpg'
     },
     {
-        title: 'funfoods',
+        title: 'Funfoods',
         img: 'https://www.bigbasket.com/media/uploads/p/l/40015829-2_7-dr-oetker-funfoods-peanut-butter-crunchy.jpg'
     }
 ]
@@ -15,6 +15,8 @@ const ads = [
 const Graphics = () =>{
 
     return(
+
+        <div className="g-con-main">
         <div className="g-con">
 
            {ads.map((ad) => 
@@ -24,6 +26,7 @@ const Graphics = () =>{
             </div>
            )}
              
+        </div>
         </div>
     )
 }

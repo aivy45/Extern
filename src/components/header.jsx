@@ -18,24 +18,24 @@ const Header=()=>{
 
 return(
 
-<header className="header">
+<header className="header"  >
  <div className='container main-head '>
 
 <div className='head-upper'>
- 
+ {/* <img></img> */}
  <h1>Company Name</h1>
 </div>
 
 
-{ Open=="Close" && <Pop/>}
+{ Open=="Close" && <Pop show="false"/>}
 
- {/* <ul className='head-down'>
+{/* <ul className='head-down'>
 <li>Home</li>
 <li>Collateral</li>
 <li>Analytics</li>
 <li>Inventory</li>
 <li>Accounts</li>
-</ul>  */}
+</ul> */}
 
 <div className="open-close"
 onClick={click}
