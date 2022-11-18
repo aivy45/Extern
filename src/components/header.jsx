@@ -18,7 +18,7 @@ const Header=()=>{
 
 return(
 
-<header className="header">
+<header className="header"  >
  <div className='container main-head '>
 
 <div className='head-upper'>
@@ -27,7 +27,7 @@ return(
 </div>
 
 
-{ Open=="Close" && <Pop/>}
+{ Open=="Close" && <Pop show="false"/>}
 
 {/* <ul className='head-down'>
 <li>Home</li>
