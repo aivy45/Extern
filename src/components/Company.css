@@ -25,17 +25,17 @@
 /********** company header css *******/
 .company-header-main{
   background-color: var(--color-bg2);
-  padding: 10px;
+  padding: 15px;
 }
 .company-header{
   width: 80%;
   display: flex;
   gap: 20px;
-  margin:  auto;
+  margin:  0 auto;
 
 }
 .company-header .new-b{
-  padding: 10px 15px;
+  padding: 15px 15px;
   outline: none;
   border: none;
   transition: all 0.4s ease;
@@ -48,7 +48,7 @@
   border-color:  white;
 }
 .company-header .profile{
-  padding: 10px 15px;
+  padding: 15px 15px;
   outline: none;
   border: none;
   transform: all 0.4s ease;
@@ -62,7 +62,7 @@
 /********* col function css  *******/
 .col-functions-main{
   background-color: var(--color-bg2);
-  padding: 10px;
+  padding: 15px;
 }
 .col-functions{
   color: var(--color-white);
