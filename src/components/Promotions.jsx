@@ -1,7 +1,10 @@
+import './Promotions.css'
 
 const Promotions = () =>{
     return (
-        <div>This is promotion</div>
+        <div className="promotion-main">
+        <div className="promotion">This is promotion</div>
+        </div>
     )
 }
 

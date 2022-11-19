@@ -20,7 +20,7 @@
 
 .form{
     background-color: var(--color-bg2);
-    padding:1px;
+    padding:15px;
 }
 #create-form{
     display: flex;

@@ -21,7 +21,7 @@ const Graphics = () =>{
 
            {ads.map((ad) => 
             <div className="g-items">
-                <img src={ad.img} width="300px" alt="" />
+                <img src={ad.img} style={{width:"300px" , height:"300px"}} alt="" />
                 <h2>{ad.title}</h2> 
             </div>
            )}
