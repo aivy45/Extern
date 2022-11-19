@@ -19,14 +19,13 @@ function createHandler() {
 
     return (
 
+     
       <React.Fragment>
-
-
-
-   <Create />
+        
+        {/* <Create/> */}
       <div className="header">
-        <Create/>
-
+        
+      <Create/>
         <div className='company-header-main'>
         <div className='company-header'>
         <button className='new-b' onClick={createHandler}>Add new</button>
