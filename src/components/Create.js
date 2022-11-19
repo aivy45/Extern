@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import axios from 'axios';
 import "./Create.css"
 
 
@@ -14,15 +15,11 @@ const Create = (props) =>{
             name: nameRef.current.value
         };
 
-      const res = await fetch('/register', {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                data
-            })
-      })
+        console.log('data is', data);
+
+      const res = await axios.post('http://localhost:5000/add', data)
+
+      console.log('axios', res);
     }
 
     return(
